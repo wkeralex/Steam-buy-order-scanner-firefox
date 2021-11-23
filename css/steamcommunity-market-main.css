@@ -1,0 +1,123 @@
+body {
+    color: #FAFAFA !important;
+}
+
+/* блок отмена маленький */
+.market_listing_edit_.button_orderss {
+    width: 80px !important;
+}
+.market_listing_buyorder_qty , .market_my_listing_sells {
+    width: 45px !important;
+}
+.market_listing_edit_buttons {
+    width: 90px !important;
+}
+
+/* стиль кнопок */
+
+.button_orders {
+    padding: 5px 10px;
+    margin: 5px;
+    background: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    color: #FAFAFA;
+}
+
+.button_orders:after, .button_orders:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid rgb(255, 255, 255);
+    transition: transform 0.2s;
+}
+
+.button_orders:after {
+    transform: translate(3px, 3px);
+}
+
+.button_orders:before {
+    transform: translate(-3px, -3px);
+}
+
+.button_orders:hover:after, .button_orders:hover:before {
+    transform: translate(0);
+}
+
+/*
+стиль таблиц при сканировании
+*/
+
+div [id^="priceTable"] {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.market_commodity_orders_table {
+    margin: 10px auto;
+    display: inline-flex !important;
+}
+
+.create_buy_input {
+    width: 80px;
+    display: block;
+    margin: 5px;
+    background-color: #324965;
+}
+
+/* заливка для span */
+.market_listing_my_profit, .market_listing_price{
+    display: inline-block !important;
+    background: #2c6464ad;
+    width: 100%;
+    text-align: center;
+}
+
+/* таблица цен */
+
+.market_commodity_orders_table {
+    display: inline-flex !important;
+    font-size: 12px;
+}
+
+.market_commodity_orders_table th {
+    margin: 0;
+    text-align: center;
+    min-width: none !important;
+    font-size: 12px !important;
+    font-weight: normal;
+}
+
+.market_commodity_orders_table td {
+    min-width: min-content !important;
+    text-align: center;
+}
+
+th:first-child, th:first-child+th {
+    display: none;
+}
+
+.min_size_table {
+    margin-top: -15px !important;
+    margin-bottom: -15px !important;
+}
+
+/*
+стиль истории
+*/
+
+#divMarketListingTableHeader {
+    height: 38px;
+}
+
+#sreach-filter, #displayNoneListingCanceledCreated {
+    margin-left: 50px;
+}
